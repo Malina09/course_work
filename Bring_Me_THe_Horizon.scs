@@ -1,0 +1,35 @@
+sc_node_not_relation->group_Bring_Me_The_Horizon;;
+
+group_Bring_Me_The_Horizon <- rrel_key_sc_element: ...
+	(*
+	=> nrel_main_idtf:[Определение(Bring Me The Horizon)](*<- lang_ru;; *);;
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Bring Me the Horizon — британская рок-группа из Шеффилда, Йоркшира, основанная в 2004 году. На протяжении карьеры участники старались экспериментировать со звучанием: ранние релизы имели более тяжёлый звук и были классифицированы как дэткор и металкор. Позднее в звучание группы добавились элементы мелодичного хардкора, альтернативного, электронного и пост-рока.](*<- lang_ru;; *);;
+		*);;
+	*);
+
+//иллюстрация
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Bring Me The Horizon)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/Bring_Me_The_Horizon.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<= nrel_subdividing:...
+  (*  
+    => nrel_main_idtf:[Состав группы](* <- lang_ru;; *);;
+    -> Oliver_Sykes;;
+    -> Lee_David_Malia;;
+    -> Matt_Kean;;
+    -> Matthew_Nicholls;;
+    -> Jordan_Fish;;
+  *);;

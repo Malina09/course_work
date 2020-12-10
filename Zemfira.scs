@@ -1,0 +1,25 @@
+sc_node_not_relation->person_Zemfira;;
+
+person_Zemfira <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:[Определение(Земфира)](*<- lang_ru;; *);;
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Земфира (полное имя Земфи́ра Талга́товна Рамаза́нова, тат. Земфира Тәлгать кызы Рамазанова; род. 26 августа 1976, Уфа, Башкирская АССР, РСФСР, СССР) - российская рок-певица, музыкант, композитор, продюсер и автор песен](*<- lang_ru;; *);;
+		*);;
+	*);;
+//иллюстрация
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Земфира)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/Zemfira.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

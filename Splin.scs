@@ -1,0 +1,36 @@
+sc_node_not_relation->group_Splin;;
+
+group_Splin <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:[Определение(Сплин)](*<- lang_ru;; *);;
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[«Сплин»  — российская рок-группа из Санкт-Петербурга.Название группы возникло благодаря строкам стихотворения русского поэта Серебряного века Саши Чёрного, на основе которого была создана песня «Под сурдинку» из первого альбома группы («Пыльная быль»)](*<- lang_ru;; *);;
+		*);;
+	*);
+
+//иллюстрация
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Сплин)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/Splin.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<= nrel_subdividing:...
+  (*  
+    => nrel_main_idtf:[Состав группы](* <- lang_ru;; *);;
+    -> Alexander_Vasiliev;;
+    -> Nikolay_Rostovsky;;
+    -> Vadim_Sergeev;;
+    -> Alexey_Meshcheryakov;;
+    -> Dmitry_Kunin;;
+  *);;

@@ -1,0 +1,36 @@
+rrel_bass_guitar_player<- sc_node_not_relation;;
+
+rrel_bass_guitar_player => nrel_main_idtf:
+     [басгитарист](* <-lang_ru;; *);
+     [rrel_guitar_player](* <-lang_en;; *);;
+
+rrel_bass_guitar_player <-rrel_key_sc_element:...
+(*
+  <-definition;;
+  =>nrel_main_idtf:
+    [Описание (басгитарист)](*<-lang_ru;;*);
+    [Description (bass guitar player)](*<-lang_en;;*);;
+  <=nrel_using_constants:
+  {
+        concept_bass_guitar;
+        concept_musician;
+        concept_musicial_instrument
+  };;
+  <=nrel_sc_text_translation:...
+  (*
+    ->rrel_example: "file://HTML/rrel_bass_guitar_player_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+    ->rrel_example: "file://HTML/rrel_bass_guitar_player_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+  *);;
+*);;
+
+//иллюстрация
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Бас-гитарист)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/bass_guitar_player.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);

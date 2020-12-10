@@ -1,0 +1,48 @@
+concept_musician <- sc_node_not_relation;;
+
+concept_musician => nrel_main_idtf:
+     [музыкант](* <-lang_ru;; *);
+     [concept_musician](* <-lang_en;; *);;
+
+concept_musician <-rrel_key_sc_element:...
+(*
+  <-definition;;
+  =>nrel_main_idtf:
+    [Описание (Музыкант)](*<-lang_ru;;*);
+    [Description (musician)](*<-lang_en;;*);;
+  <=nrel_using_constants:
+  {
+        concept_specialist;
+        concept_music;
+        concept_musicial_instrument
+  };;
+  <=nrel_sc_text_translation:...
+  (*
+    ->rrel_example: "file://HTML/concept_musician_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+    ->rrel_example: "file://HTML/concept_musician_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+  *);;
+*);
+
+//иллюстрация
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Музыкант)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/musicians.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<= nrel_subdividing:...
+  (*  
+    => nrel_main_idtf:[Разбиение по владению музыкальным инструментом](* <- lang_ru;; *);;
+    -> guitar_player;;
+    -> drummer;;
+    -> keyboardist;;
+    -> trumpeter;;
+    -> bass_guiter_player;;
+    -> saxophonist;;
+    -> violinist;;
+  *);;

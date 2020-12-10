@@ -1,0 +1,46 @@
+nrel_country_of_origin<- sc_node_not_relation;;
+
+nrel_country_of_origin => nrel_main_idtf:
+     [страна происхождения](* <-lang_ru;; *);
+     [nrel_country_of_origin](* <-lang_en;; *);;
+
+nrel_country_of_origin <-rrel_key_sc_element:...
+(*
+  <-definition;;
+  =>nrel_main_idtf:
+    [Описание (Страна происхождения)](*<-lang_ru;;*);
+    [Description (Country of origin)](*<-lang_en;;*);;
+  <=nrel_using_constants:
+  {
+        concept_country;
+        concept_creative_activity
+  };;
+  <=nrel_sc_text_translation:...
+  (*
+    ->rrel_example: "file://HTML/nrel_country_of_origin_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+    ->rrel_example: "file://HTML/nrel_country_of_origin_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+  *);;
+*);
+
+//иллюстрация
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Страна происхождения)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/map.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<= nrel_subdividing:...
+  (*  
+    => nrel_main_idtf:[Континент](* <- lang_ru;; *);;
+    -> Australia;;
+    -> Eurasia;;
+    -> Africa;;
+    -> South_America;;
+    -> North_America;;
+  *);;
+

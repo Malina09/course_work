@@ -1,0 +1,36 @@
+rrel_saxophonist <- sc_node_not_relation;;
+
+rrel_saxophonist => nrel_main_idtf:
+     [саксофонист](* <-lang_ru;; *);
+     [rrel_sexophonist](* <-lang_en;; *);;
+
+rrel_saxophonist <-rrel_key_sc_element:...
+(*
+  <-definition;;
+  =>nrel_main_idtf:
+    [Описание (саксофонист)](*<-lang_ru;;*);
+    [Description (saxophonist)](*<-lang_en;;*);;
+  <=nrel_using_constants:
+  {
+        concept_saxophone;
+        concept_musician
+  };;
+  <=nrel_sc_text_translation:...
+  (*
+    ->rrel_example: "file://HTML/rrel_saxophonist_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+    ->rrel_example: "file://HTML/rrel_saxophonist_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+  *);;
+*);;
+//иллюстрация
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Саксофонист)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/saxophonist.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+

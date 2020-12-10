@@ -1,0 +1,62 @@
+concept_music_group <- sc_node_not_relation;;
+Bring_Me_The_Horizon <- sc_node_not_relation;;
+
+
+concept_music_group => nrel_main_idtf:
+     [музыкальная группа](* <-lang_ru;; *);
+     [concept_music_group](* <-lang_en;; *);;
+
+concept_music_group <-rrel_key_sc_element:...
+(*
+  <-definition;;
+  =>nrel_main_idtf:
+    [Описание (музыкальная группа)](*<-lang_ru;;*);
+    [Description (music group)](*<-lang_en;;*);;
+  <=nrel_using_constants:
+  {
+        concept_aim;
+        concept_musician;
+        concept_group
+  };;
+  <=nrel_sc_text_translation:...
+  (*
+    ->rrel_example: "file://HTML/concept_music_group_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+    ->rrel_example: "file://HTML/concept_music_group_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+  *);;
+*);
+
+//утверждение
+<- rrel_key_sc_element: ... 
+(*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Музыкальная группа)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+       nrel_number_of_participants
+};; 
+ <= nrel_sc_text_translation: ... 
+(*
+      -> rrel_example:
+[В музыкальной группе может быть разное количество участников.](*<-lang_ru;;*);;
+      *);;
+  *);
+<= nrel_subdividing:...
+  (*  
+    => nrel_main_idtf:[Разбиение по количеству участников](* <- lang_ru;; *);;
+    -> duet;;
+    -> trio;;
+    -> quartet;;
+    -> quintet;;
+    -> septet;;
+    -> octet;;
+    -> orchestra;;
+  *);;
+
+//пример
+concept_music_group -> Bring_Me_The_Horizon;;
+
+//directed_graph->concept_music_group(*
+//    ->rrel_vertex: music_group;;
+//	->rrel_vertex: Bring_Me_The_Horizon;;
+//	->rrel_edge: (music_group => Bring_Me_The_Horizon );;
+//*);;

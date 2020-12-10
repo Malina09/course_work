@@ -1,0 +1,38 @@
+nrel_peak_of_popularity<- sc_node_not_relation;;
+
+nrel_peak_of_popularity => nrel_main_idtf:
+     [страна происхождения](* <-lang_ru;; *);
+     [nrel_peak_of_popularity](* <-lang_en;; *);;
+
+nrel_peak_of_popularity <-rrel_key_sc_element:...
+(*
+  <-definition;;
+  =>nrel_main_idtf:
+    [Описание (Страна происхождения)](*<-lang_ru;;*);
+    [Description (nrel_peak_of_popularity)](*<-lang_en;;*);;
+  <=nrel_using_constants:
+  {
+        nrel_the_time_frame;
+        nrel_most_successful;
+        concept_creative_activity
+  };;
+  <=nrel_sc_text_translation:...
+  (*
+    ->rrel_example: "file://HTML/nrel_peak_of_popularity_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+    ->rrel_example: "file://HTML/nrel_peak_of_popularity_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+  *);;
+*);
+
+<= nrel_subdividing:...
+  (*  
+    => nrel_main_idtf:[Временные рамки](* <- lang_ru;; *);;
+    -> 60th;;
+    -> 70th;;
+    -> 80th;;
+    -> 90th;;
+    -> 0th;;
+    -> 2010th;;
+    -> 2015th;;
+    -> Nowadays;;
+  *);;
+

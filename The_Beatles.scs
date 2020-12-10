@@ -1,0 +1,35 @@
+sc_node_not_relation->group_The_Beatles;;
+
+group_The_Beatles <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:[Определение(The Beatles)](*<- lang_ru;; *);;
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Британская рок-группа из Ливерпуля, основанная в 1960 году. The Beatles оказали значительное влияние на  рок-музыку и признаются специалистами одной из наиболее успешных групп XX века, как в творческом, так и в коммерческом смысле.](*<- lang_ru;; *);;
+		*);;
+	*);
+
+//иллюстрация
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (The Beatles)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/The_Beatles.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<= nrel_subdividing:...
+  (*  
+    => nrel_main_idtf:[Состав группы](* <- lang_ru;; *);;
+    -> John_Winston_Ono_Lennon;;
+    -> James_Paul_McCartney;;
+    -> George_Harrison;;
+    -> Ringo_Starr;;
+  *);;

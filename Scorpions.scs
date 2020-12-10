@@ -1,0 +1,35 @@
+sc_node_not_relation->group_Scorpions;;
+
+group_Scorpions <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:[Определение(Scorpions)](*<- lang_ru;; *);;
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Scorpions - немецкая англоязычная рок-группа, созданная в 1965 в Ганновере. Для стиля группы характерны как классический хард-рок, так и лирические гитарные баллады. Scorpions являются самой популярной рок-группой Германии и одной из самых известных в мире, продав более 100 миллионов копий своих альбомов (по состоянию на 29 января 2010). Коллектив занимает 46 место в списке «Величайших артистов хард-рока» по версии VH1](*<- lang_ru;; *);;
+		*);;
+	*);
+//иллюстрация
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Scorpions)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/Scorpions.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<= nrel_subdividing:...
+  (*  
+    => nrel_main_idtf:[Состав группы](* <- lang_ru;; *);;
+    -> Rudolf_Schenker;;
+    -> Klaus_Meine;;
+    -> Matthias_Jabs;;
+    -> Pavel_Monchivoda;;
+    -> Mickey_Dee;;
+  *);;

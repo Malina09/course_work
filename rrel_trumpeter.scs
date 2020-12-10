@@ -1,0 +1,36 @@
+rrel_trumpeter<- sc_node_not_relation;;
+
+rrel_trumpeter => nrel_main_idtf:
+     [трубач](* <-lang_ru;; *);
+     [rrel_trumpeter](* <-lang_en;; *);;
+
+rrel_trumpeter <-rrel_key_sc_element:...
+(*
+  <-definition;;
+  =>nrel_main_idtf:
+    [Описание (трубач)](*<-lang_ru;;*);
+    [Description (trumpeter)](*<-lang_en;;*);;
+  <=nrel_using_constants:
+  {
+        concept_trumpet;
+        concept_musician;
+        concept_musicial_instrument
+  };;
+  <=nrel_sc_text_translation:...
+  (*
+    ->rrel_example: "file://HTML/rrel_trumpeter_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+    ->rrel_example: "file://HTML/rrel_trumpeter_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+  *);;
+*);;
+
+//иллюстрация
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Трубач)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/trumpeter.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);

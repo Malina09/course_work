@@ -1,0 +1,36 @@
+sc_node_not_relation->group_Three_Days_Grace;;
+
+group_Three_Days_Grace <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:[Определение(Three Days Grace)](*<- lang_ru;; *);;
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Three Days Grace — канадская рок-группа, исполняющая альтернативный метал и постгранж. Была сформирована под названием Groundswell в Норвуде, Онтарио, Канада в 1992 году.](*<- lang_ru;; *);;
+		*);;
+	*);
+
+//иллюстрация
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Three Days Grace)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/Three_Days_Grace.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<= nrel_subdividing:...
+  (*  
+    => nrel_main_idtf:[Состав группы](* <- lang_ru;; *);;
+    -> Adam_Gontier;;
+    -> Neil_Christopher_Sanderson;;
+    -> Matthew_Jean_Paul_Walst;;
+    -> Brad_Walst;;
+    -> Barry_Stock;;
+  *);;

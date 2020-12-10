@@ -1,0 +1,37 @@
+rrel_violinist <- sc_node_not_relation;;
+
+rrel_violinist => nrel_main_idtf:
+     [скрипач](* <-lang_ru;; *);
+     [rrel_violinist](* <-lang_en;; *);;
+
+rrel_violinist <-rrel_key_sc_element:...
+(*
+  <-definition;;
+  =>nrel_main_idtf:
+    [Описание (скрипач)](*<-lang_ru;;*);
+    [Description (violinist)](*<-lang_en;;*);;
+  <=nrel_using_constants:
+  {
+        concept_violine;
+        concept_musician
+  };;
+  <=nrel_sc_text_translation:...
+  (*
+    ->rrel_example: "file://HTML/rrel_violinist_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+    ->rrel_example: "file://HTML/rrel_violinist_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+  *);;
+*);;
+
+//иллюстрация
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Скрипач)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/violinist.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+

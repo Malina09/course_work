@@ -1,0 +1,47 @@
+concept_solo_singer <- sc_node_not_relation;;
+
+concept_solo_singer => nrel_main_idtf:
+     [сольный исполнитель](* <-lang_ru;; *);
+     [concept_solo_perfomer](* <-lang_en;; *);;
+
+concept_solo_singer <-rrel_key_sc_element:...
+(*
+  <-definition;;
+  =>nrel_main_idtf:
+    [Описание (Сольный исполнитель)](*<-lang_ru;;*);
+    [Description (solo perfomer)](*<-lang_en;;*);;
+  <=nrel_using_constants:
+  {
+        concept_solo;
+        concept_musical_composition;
+        concept_performer
+  };;
+  <=nrel_sc_text_translation:...
+  (*
+    ->rrel_example: "file://HTML/concept_solo_perfomer_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+    ->rrel_example: "file://HTML/concept_solo_perfomer_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+  *);;
+*);
+
+//иллюстрация
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Вокалист)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/solo_singer.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<= nrel_subdividing:...
+  (*  
+    => nrel_main_idtf:[Разбиение по типу певческого голоса](* <- lang_ru;; *);;
+    -> tenor;;
+    -> baritone;;
+    -> bass;;
+    -> soprano;;
+    -> mezzo_soprano;;
+    -> contralto;;
+  *);;

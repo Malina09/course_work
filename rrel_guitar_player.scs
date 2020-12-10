@@ -1,0 +1,37 @@
+rrel_guitar_player <- sc_node_not_relation;;
+
+rrel_guitar_player => nrel_main_idtf:
+     [гитарист](* <-lang_ru;; *);
+     [rrel_guitar_player](* <-lang_en;; *);;
+
+rrel_guitar_player <-rrel_key_sc_element:...
+(*
+  <-definition;;
+  =>nrel_main_idtf:
+    [Описание (гитарист)](*<-lang_ru;;*);
+    [Description (guitar player)](*<-lang_en;;*);;
+  <=nrel_using_constants:
+  {
+        concept_guitar;
+        concept_musician
+  };;
+  <=nrel_sc_text_translation:...
+  (*
+    ->rrel_example: "file://HTML/rrel_guitar_player_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+    ->rrel_example: "file://HTML/rrel_guitar_player_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+  *);;
+*);;
+
+//иллюстрация
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Гитарист)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/guitar_player.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+

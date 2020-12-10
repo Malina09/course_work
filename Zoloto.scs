@@ -1,0 +1,35 @@
+sc_node_not_relation->group_Zoloto;;
+
+group_Zoloto <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:[Определение(Zoloto)](*<- lang_ru;; *);;
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Группа Zoloto была создана в Алма-Ате в 2009 году. Её основатель, Владимир Золотухин, он же автор песен, приехал в Москву поступать в ВУЗ. Поступил в РГГУ, где и познакомился с Петром Паршиным, с которым начал записывать свои песни.](*<- lang_ru;; *);;
+		*);;
+	*);
+
+//иллюстрация
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Zoloto)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/Bring_Me_The_Horizon.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<= nrel_subdividing:...
+  (*  
+    => nrel_main_idtf:[Состав группы](* <- lang_ru;; *);;
+    -> Vladimir_Zolotukhin;;
+    -> Peter_Parshin;;
+    -> Sergey_Peltola;;
+    -> Vladimir_Vorozhbitov;;
+  *);;

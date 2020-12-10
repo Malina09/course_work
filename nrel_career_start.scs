@@ -1,0 +1,23 @@
+nrel_career_start<- sc_node_not_relation;;
+
+nrel_career_start => nrel_main_idtf:
+     [начало карьеры](* <-lang_ru;; *);
+     [nrel_carier_start](* <-lang_en;; *);;
+
+nrel_career_start <-rrel_key_sc_element:...
+(*
+  <-definition;;
+  =>nrel_main_idtf:
+    [Описание (начало карьеры)](*<-lang_ru;;*);
+    [Description (The beginning of a career)](*<-lang_en;;*);;
+  <=nrel_using_constants:
+  {
+        nrel_the_first_steps;
+        concept_creative_activity
+  };;
+  <=nrel_sc_text_translation:...
+  (*
+    ->rrel_example: "file://HTML/nrel_career_start_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+    ->rrel_example: "file://HTML/nrel_career_start_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+  *);;
+*);;
